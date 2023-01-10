@@ -30,14 +30,14 @@ def check_for_new_papers():
     c.execute('''SELECT published FROM papers ORDER BY published DESC''')
     result = c.fetchone()
     if not result:
-        last_scraped_timestamp = None
+        last_scraped_timestamp = '2023-01-05T00:00:00Z'
     else:
         last_scraped_timestamp = result[0] 
     
-    c.execute('''SELECT COUNT(*) FROM papers;''')
-    temp = int(c.fetchone()[0])
-    if (temp) == 0:
-        last_scraped_timestamp = '2023-01-05T00:00:00Z'
+    # c.execute('''SELECT COUNT(*) FROM papers;''')
+    # temp = int(c.fetchone()[0])
+    # if (temp) == 0:
+    #     last_scraped_timestamp = '2023-01-05T00:00:00Z'
 
     if last_scraped_timestamp:
         start=0
