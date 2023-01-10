@@ -35,10 +35,10 @@ The fact that researchers work in interdisciplinary fields  requiring them to ke
 - Run it in local server: ```flask run```.
 
 
-
 ## <b>Overview</b>
 - User friendly interface to select the area of interest and get relavant papers every week.
 - Additional summarization feature to quickly understand the key points of paper.
+- For summarization, we have **finetuned** a pre-trained model(T5) on scientific articles and stored the weights and tokenizers locally for quick inference. 
 
 ## <b>Requirements</b>
 - Requirements are mentioned in this [file](requirements.txt).
