@@ -62,7 +62,7 @@ def check_for_new_papers():
         ## start += max_results
     else:
         start=0
-        search_query = "cat:cs.CV+OR+cat:cs.LG+OR+cat:cs.CL+OR+cat:cs.AI+OR+cat:cs.NE+OR+cat:cs.RO"
+        search_query = "cat:cs.CV+OR+cat:cs.LG+OR+cat:cs.CL+OR+cat:cs.AI+OR+cat:cs.NE+OR+cat:cs.RO+OR+cat:cs.CR"
         sort_by = "submittedDate"   
         sort_order = "descending"
         # If no papers have been scraped yet, get all papers
