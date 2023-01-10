@@ -1,4 +1,4 @@
-# <b>Research-Digest</b>: Stay upto-date with the Latest Research.
+# <b>Research-Digest</b>: Stay upto-date with the Latest Research
 An application which is designed to scrape through arXiv each week in search of the newly published papers in the particular fields of 
 * cs.CV - Computer Vision
 * cs.LG - Machine Learning 
