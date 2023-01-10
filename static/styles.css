@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(230, 225, 217);
+}
+
+.top-1{
+    text-align: center;
+    /* background-color: aliceblue; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-2{
+    margin-top: 20px;
+}
+
+#top-2{
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+/* Interest selector */
+.interest-select{
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 8px;
+}
+/* Interest submit button */
+#interest-select-button-div{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#interest-submit-button{
+    height: 25px;
+    width: 70px;
+    border-radius: 25px;
+    color: black;
+    background-color: rgb(230, 225, 217);
+}
+
+/* Displaying contents for user */
+.paper-1{
+    margin-top: 10px;
+}
+.paper-2{
+    background-color: rgb(243, 243, 243);
+    text-align: left;
+    padding: 10px;
+}
+#paper-title-link{
+    text-decoration: none;
+    color: black;
+    color: brown;
+}
+#paper-title-link:hover{
+    text-decoration: underline;
+    color: brown;
+}
+
+#paper-author{
+    padding-top: 4px;
+}
+#paper-summary{
+    padding-top: 8px;
+}
+
+#hugface-input{
+    height: 500px;
+    width: 80%;
+}
+
+
+.top-3{
+    height: 80px;
+    background-color: rgb(243, 243, 243);
+}
+
+/* 3 div inside top-3 div*/
+/* Common to each div*/
+#inner{
+    width:100%;
+}
+
+/* Unique to each div */
+#inner-1{
+    padding: 10px;
+}
+#inner-2{
+    padding: 10px;
+}
+#inner-3{
+    padding: 10px;
+}
+
+
+
+/* Submit Button for register/login */
+#submit{
+    width: 150px;
+    height: 100px;
+}
+
+/* Top header with title and logout */
+#header{
+    height:30px;
+    background-color: brown;
+}
+
+/* Common for both title and logout */
+.c1{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    height: 100%;
+    line-height: 30px;
+}
+/* Title of product */
+#title{
+    float: left;
+    padding-left: 10px;
+}
+
+/* Logout user */
+#logout{
+    float: right;
+    padding-right: 10px;
+}
+#logout-link{
+    text-decoration: none;
+    color: white;
+}
+
+/* Submit button */
+#login{
+    margin: 10px;
+    height: 35px;
+    width: 120px;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    /* background-color: aliceblue; */
+}
+#login:hover{
+    font-weight: bold;
+}
