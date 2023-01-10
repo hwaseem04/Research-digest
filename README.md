@@ -10,6 +10,9 @@ An application which is designed to scrape through arXiv each week in search of 
 
 And offers summarization feature enabling users to understand key points of the papers.
 
+![Home page](files/img.png)
+
+Demo(gif- may take time to load):
 ![Home page](files/video.gif)
 
 ## <b>Table of contents</b>
