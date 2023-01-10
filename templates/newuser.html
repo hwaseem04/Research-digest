@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="top-1">
+        <center><h3>{{ user }}, pick your interest</h3></center>
+        <div id="top-2">
+            <div class="interest-select" >
+                <form id="form" action="/profile" method="post">
+                    <input type="checkbox" id="select1" name="1" value="cs.CV">
+                    <label for="select1"> Computer Vision</label><br>
+                    <input type="checkbox" id="select2" name="2" value="cs.LG">
+                    <label for="vehicle2"> Machine Learning</label><br>
+                    <input type="checkbox" id="select3" name="3" value="cs.RO">
+                    <label for="select3"> Robotics</label><br>
+                    <input type="checkbox" id="select4" name="4" value="cs.AI">
+                    <label for="select4"> Artificial Intelligencee</label><br>
+                    <input type="checkbox" id="select5" name="5" value="cs.NE">
+                    <label for="select5">Neural and Evolutionary Computing</label><br>
+                    <input type="checkbox" id="select6" name="6" value="eess.IV">
+                    <label for="select6">Image and Video Processing</label><br>
+                    <input type="checkbox" id="select7" name="7" value="cs.CR">
+                    <label for="select7">Crytography and Security</label><br>
+                </form>
+            </div>
+            <div id="interest-select-button-div">
+                <input id="interest-submit-button" type="submit" form="form" value="Submit"/>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

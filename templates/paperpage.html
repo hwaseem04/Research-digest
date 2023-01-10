@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="top-1">
+        <center>
+            <h3>Abstract</h3>
+        </center>
+        <div class="top-2">
+            <div class="paper-1">
+                <div class="paper-2">
+                    <p>{{rows[7]}}</p>
+                </div>
+            </div>
+            <div class="paper-1">
+                <div style="text-align: center;" class="paper-2">
+                    <p><b>Link to original paper:</b> <a id="paper-title-link" href="{{rows[0]}}">{{rows[0]}}</a></p>
+                </div>
+            </div>
+            <div class="paper-1">
+                <div style="text-align: center;" class="paper-2">
+                    <h3>Copy paste text from research paper to get summary: </h3>
+                    <br>
+                    <form action="/paper-page" method="post" form="form-2">
+                        <textarea name="hugface" rows="10" cols="180">
+                            
+                        </textarea>
+                        <br>
+                        <input type="submit" value="Get Summary">
+                    </form>
+                </div>
+            </div>
+            <div class="paper-1">
+                <div style="text-align: left;" class="paper-2">
+                    <p><b>Summary: </b></p>
+                    <br>
+                    <p>
+                        {{rows[8]}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

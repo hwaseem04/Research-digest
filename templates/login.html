@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="top-1">
+        <center><h3>Login Page</h3></center>
+        <div class="top-2">
+            <div class="top-3">
+                <form action="/login" method="POST">
+                    <div class="inner" id="inner-1">
+                        <label for="username">Username: </label>
+                        <input type="text" class="login-text" id="username" name="username"><br>
+                    </div>
+                    
+                    <div class="inner" id="inner-2">
+                        <label for="password">Password: </label>
+                        <input type="password" class="login-text" id="password" name="password"><br> 
+                    </div>  
+                    <div class="inner" id="inner-3">
+                        <button type="submit" id="login">Login/Register</button>
+                    </div>      
+                </form>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}
+

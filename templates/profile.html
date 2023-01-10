@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="top-1">
+        <center>
+            <h3>
+                Welcome <p style="color: brown; display: inline">{{ user }}</p> 
+                {% if rows|length > 0 %}
+                    <div>You have <p style="color: brown; display: inline">{{rows|length}}</p> digest for this week!</p></div>
+                {% elif rows|length == 0 %}
+                    <p>No new papers released this week</p>
+                {% endif %}
+            </h3>
+        </center>
+        <div class="top-2">
+            {% for row in rows %}
+            <div class="paper-1">
+                <div class="paper-2">
+                    <!-- 
+                        row[0] - link
+                        row[1] - category
+                        row[2] - link
+                        row[3] - Title
+                        row[4] - updated
+                        row[5] - published
+                        row[6] - authors
+                        row[7] - abstract
+                     -->
+                    <div id="paper-title">
+                        <!-- <a id="paper-title-link" name="{{loop.index}}" href="\paper-page"><h3>{{loop.index}}. {{row[3]}}</h3></a> -->
+                        <form action="/paper-page" id="form-3{{loop.index}}" method="post">
+                            <p><a id="paper-title-link" href="#" onclick="document.getElementById('form-3{{loop.index}}').submit()"><h3>{{loop.index}}. {{row[3]}}</h3></a></p>
+                            <input type = "hidden" name="Index" value="{{loop.index}}" />
+                        </form>
+                        <p><b>Tag:</b>{{row[1]}}, <b>Published on:</b> {{row[5].split('T')[0]}}</p>
+                    </div>
+                    <div id="paper-author">
+                        <p><b>Authors:</b> <i>{{row[6]}}</i></p>
+                    </div>
+                    <div id="paper-summary">
+                        <b><p>Abstract summary:</p></b>
+                        <p>{{row[7]}}</p>
+                    </div>
+                </div>   
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
