@@ -31,14 +31,14 @@ The fact that researchers work in interdisciplinary fields  requiring them to ke
 
 ## <b>Getting started</b>
 - Create conda environment
-- Install dependencies ```conda install --file requirements.txt```
-- Run it in local server.
+- Install dependencies: ```conda install --file requirements.txt```
+- Run it in local server: ```flask run```.
 
 
 
 ## <b>Overview</b>
-- User friendly interface to select the area of interest and read through papers.
-- Summarization feature to quickly understand the key points of paper.
+- User friendly interface to select the area of interest and get relavant papers every week.
+- Additional summarization feature to quickly understand the key points of paper.
 
 ## <b>Requirements</b>
 - Requirements are mentioned in this [file](requirements.txt).
