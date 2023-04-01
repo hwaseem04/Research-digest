@@ -44,6 +44,10 @@ The fact that researchers work in interdisciplinary fields requiring them to kee
 ## <b>Requirements</b>
 - Requirements are mentioned in this [file](requirements.txt).
 
+## Model File
+- Download model file from [drive](https://drive.google.com/file/d/10A3L5EAguTjcd-QUW67LCRCv1if-ut_i/view?usp=sharing).
+- Place the model file in `model/` directory.
+
 ## <b>Improvement/bug reports</b>
 If you encounter any bugs or have any suggestions for improving the application, please feel free to contact us or open an issue on the project's Github page.
 
